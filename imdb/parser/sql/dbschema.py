@@ -301,7 +301,7 @@ DB_SCHEMA = [
             # "Series, The" (2005)                "Other Title" (2005)
             DBCol('id', INTCOL, notNone=True, alternateID=True),
             DBCol('movieID', INTCOL, notNone=True, index='idx_movieid'),
-            DBCol('title', UNICODECOL, length=200, notNone=True, index='idx_title', indexLen=10),
+            DBCol('title', UNICODECOL, length=200, notNone=True),
             DBCol('imdbIndex', STRINGCOL, length=12, default=None),
             DBCol('kindID', INTCOL, notNone=True, index='idx_kindid'),
             DBCol('productionYear', INTCOL, default=None, index='idx_year'),
